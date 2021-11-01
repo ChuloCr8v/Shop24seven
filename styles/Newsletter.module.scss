@@ -1,9 +1,10 @@
 .newsletter {
-  padding: 40px 20px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: white;
   .newsletter_title {
     text-align: center;
     font-size: calc(25px + 1vh);

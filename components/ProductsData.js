@@ -8,7 +8,7 @@ const data = [
   {
     img: '/../public/sneakers3.jpg', 
     id: 1, 
-    title: "Air Jordan", 
+    title: "Air Jordan Sneakers", 
     price: "$250"
   }, 
   {
@@ -32,7 +32,7 @@ const data = [
   {
     img: '/../public/sneakers2.jpg', 
     id: 4, 
-    title: "Nike Air", 
+    title: "Nike Air Sneakers", 
     price: "$190"
   }, 
   {
@@ -61,6 +61,12 @@ const data = [
   }, 
   {
     img: '/../public/watch2.jpg', 
+    id: 4, 
+    title: "Richard Mille Wristwatch", 
+    price: "$1500"
+  }, 
+  {
+    img: '/../public/watch1.jpg', 
     id: 4, 
     title: "Richard Mille Wristwatch", 
     price: "$1500"

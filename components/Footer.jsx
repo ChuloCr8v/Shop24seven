@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={style.logo_container}>
           <h1 className={style.footer_logo}>Shop<span>24Seven</span></h1>
           <p className={style.footer_description}> 
-            We are your no.1 retailer for all fashion products and accessories. We offer different luxury items including wristwatches, shoes, sunglasses etc, at some of the best prices. 
+            We are your No.1 retailer for all fashion products and accessories. We offer different luxury items including wristwatches, shoes, sunglasses etc, at some of the best prices. 
           </p>
         </div>
         <div className={style.footer_social_icons}>
