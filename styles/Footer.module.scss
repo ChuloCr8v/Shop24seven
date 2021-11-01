@@ -1,0 +1,60 @@
+.footer {
+  color: white;
+  background: #002b3c;
+  padding: 20px;
+  .footer_section {
+    padding: 20px 0;
+    .logo_container {
+      .footer_logo {
+        font-size: calc(25px + 0.5vh);
+        text-align: center;
+        span {
+          color: red;
+        }
+      }
+      .footer_description {
+        margin: 20px 0;
+        font-size: calc(13px + 0.5vh);
+      }
+    }
+    .footer_social_icons {
+      display: flex;
+      .footer_social_icon {
+        font-size: 25px;
+        color: white;
+        margin-right: 5px;
+      }
+    }
+    .menu_title {
+      text-align: center;
+      font-size: calc(20px + 0.5vh);
+    }
+    .links_container {
+      .links {
+        margin-top: 30px;
+        li {
+          margin-top: 5px;
+          font-size: calc(13px + 0.5vh);
+        }
+      }
+    }
+    .contact_container {
+      margin-top: 30px;
+      .contact {
+        padding-top: 30px;
+        li {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          .contact_icon {
+            font-size: 20px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .atm_cards {
+      margin-top: 20px;
+    }
+  }
+}

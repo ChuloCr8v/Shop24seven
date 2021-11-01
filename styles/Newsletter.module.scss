@@ -1,0 +1,49 @@
+.newsletter {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .newsletter_title {
+    text-align: center;
+    font-size: calc(25px + 1vh);
+  }
+  .newsletter_subtitle {
+    font-size: calc(10px + 0.5vh);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .newsletter_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+    input {
+      width: 100%;
+      padding: 4px 10px;
+      margin: 10px 0;
+      border: none;
+      border: 2px teal solid ;
+      &:focus {
+        outline: none;
+        border: 2px red solid;
+      }
+    }
+    .send_icon_container {
+      position: absolute;
+      right: 10px;
+      padding: 2px;
+      .send_icon {
+        color: teal;
+        font-size: 15px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

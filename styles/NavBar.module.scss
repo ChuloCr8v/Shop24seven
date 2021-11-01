@@ -1,0 +1,111 @@
+@mixin flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+  padding-bottom: 20px;
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .menu_item_logo {
+      font-size: 25px;
+      color: black;
+      cursor: pointer;
+      span {
+        color: red;
+      }
+    }
+    .user {
+      position: relative;
+      .user_icon {
+        margin-left: 20px;
+        &:hover,
+        &:active {
+          opacity: 0.3;
+        }
+      }
+      .user_login_signup_link {
+        @include flex_col;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: rgba(255, 255, 255, 0.015);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(6.5px);
+        -webkit-backdrop-filter: blur(6.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 50;
+        .signup_link,
+        .login_link {
+          width: 100%;
+          color: white;
+          text-align: center;
+          text-transform: capitalize;
+          position: relative;
+          z-index: 99;
+          font-size: 13px;
+          background: red;
+          border-radius: 8px;
+          padding: 5px 20px;
+          margin: 5px;
+          transition: all 0.3s ease ;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .login_link {
+          background: green;
+        }
+      }
+    }
+  }
+  .search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    &:hover {
+      .search_input {
+        border-color: red ;
+        outline: none;
+      }
+      .search_icon_container {
+        .search_icon {
+          color: red;
+        }
+      }
+    }
+    .search_input {
+      width: 100%;
+      border: 2px gray solid;
+      padding: 5px 10px;
+      padding-left: 5px;
+    }
+    .search_icon_container {
+      position: absolute;
+      right: 10px;
+      border: none;
+      background: transparent;
+      .search_icon {
+        color: gray;
+      }
+    }
+  }
+}

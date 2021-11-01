@@ -1,0 +1,29 @@
+.featured_products {
+  overflow: scroll ;
+  display: flex;
+  margin: 50px 0;
+  .arrow_container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+    padding: 0 20px;
+    z-index: 99;
+    .arrow {
+      background: #eeeeee;
+      box-shadow: 3px 3px 2px rgb(0,0,0, 0.2);
+      padding: 10px;
+      border-radius: 100%;
+      font-size: 35px;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+  }
+}
