@@ -9,7 +9,7 @@ const Footer = () => {
     <div className={style.footer}>
       <div className={style.footer_section}>
         <div className={style.logo_container}>
-          <h1 className={style.footer_logo}>Shop<span>24Seven</span></h1>
+          <h1 className={style.footer_logo}>Shop<span> 24Seven</span></h1>
           <p className={style.footer_description}> 
             We are your No.1 retailer for all fashion products and accessories. We offer different luxury items including wristwatches, shoes, sunglasses etc, at some of the best prices. 
           </p>
@@ -43,15 +43,15 @@ const Footer = () => {
           <ul className={style.contact} > 
             <li>
               <FaMapMarker className={style.contact_icon} />
-              <p> Lagos State, Nigeria </p>
+              Lagos State, Nigeria 
             </li>
             <li>
               <FaPhone className={style.contact_icon} />
-              <p>+2345678901</p>
+              +2345678901
             </li>
             <li>
               <FaEnvelope className={style.contact_icon} />
-              <p>Shop24seven1@gmail.com</p>
+              Shop24seven1@gmail.com
             </li>
           </ul>
         </div>

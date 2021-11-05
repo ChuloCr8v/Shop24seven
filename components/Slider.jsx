@@ -3,6 +3,7 @@ import data from './SliderData'
 import {FaChevronRight, FaChevronLeft} from 'react-icons/fa'
 import {useState, useEffect } from 'react'
 import Image from 'next/image'
+import Bg from '../public/category4.jpg'
 
 const Slider = () => {
   
@@ -34,15 +35,14 @@ const Slider = () => {
       slideImg={slideImg} 
       className={style.wrapper}
       style={{transform: `translateX(${slideImg * -100}vw)`}} >
-        {data.map((slide) => (
+        {data.map((slide, index) => (
           <div 
-          key={slide.id} 
+          key={index} 
           className={style.slide}
-          style={{background: `${slide.bg}`}} 
           >
-            <Image src={slide.img} alt={slide.title} height="100" width="100"/> 
             <h1 className={style.slide_title} >{slide.title}</h1>
             <p  className={style.slide_content}>{slide.content}</p>
+            <Image src={slide.img} height="200" width="200" />
           </div>
         ))} 
       </div>

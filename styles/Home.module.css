@@ -4,8 +4,9 @@
 }
 
 .section_title {
-  max-width: 300px;
-  font-size: calc(20px + 0.5vh);
+  width: 300px;
+  font-size: 20px;
+  font-weight: 400;
   color: white;
   background: black;
   margin-left: 30px;

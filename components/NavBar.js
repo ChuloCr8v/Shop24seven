@@ -10,7 +10,9 @@ const NavBar = () => {
     <nav className={style.navbar}>
       <ul className={style.menu}>
           <li className={style.menu_item}>
-            <h1 className={style.menu_item_logo}>Shop<span>24Seven</span></h1>
+            <Link href="/">
+              <h1 className={style.menu_item_logo}>Shop<span>24Seven</span></h1>
+            </Link>
           </li>
           <li className={style.user}>
             <FaUser 
@@ -18,6 +20,19 @@ const NavBar = () => {
             onClick= {() => setShowUserLogin(!showUserLogin)} 
             />
             {showUserLogin &&
+            <ol className={style.user_login_signup_link_mobile}>
+              <li className={style.login_link}>
+                <Link href="/login">
+                  LOGIN
+                </Link>
+              </li>
+              <li className={style.signup_link}>
+                <Link href="/register">
+                  SIGNUP
+                </Link>
+              </li>
+            </ol>
+            } 
             <ol className={style.user_login_signup_link}>
               <li className={style.login_link}>
                 <Link href="/login">
@@ -25,16 +40,16 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className={style.signup_link}>
-                <Link href="/signup">
+                <Link href="/register">
                   SIGNUP
                 </Link>
               </li>
-            </ol>
-            } 
-            <FaShoppingCart className={style.user_icon} />
+             </ol>
+            <Link href="/cart">
+              <FaShoppingCart className={style.cart_icon} />
+            </Link>
           </li>
-      </ul>
-      <div className={style.search}>
+          <div className={style.search}>
           <input 
             type="text"
             required
@@ -45,6 +60,7 @@ const NavBar = () => {
             <FaSearch className={style.search_icon} />
           </button>
       </div>  
+      </ul>
     </nav>
     )
 }

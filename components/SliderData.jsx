@@ -1,6 +1,6 @@
  const data = [
   {
-    img: '/../public/slider1.png', 
+    img: '/../public/category4.jpg', 
     bg: "white", 
     id: 1, 
     title: "Top Quality", 

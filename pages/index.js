@@ -4,6 +4,7 @@ import Categories from '../components/Categories'
 import Slider from '../components/Slider'
 import FeaturedProducts from '../components/FeaturedProducts'
 import Products from '../components/Products'
+import Register from '../components/Register'
 import SingleProduct from '../components/SingleProduct'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
@@ -19,7 +20,7 @@ export default function Home() {
         <meta name="Fashion Shop" content="dealer on all fashion accessories including shoes, bags, wristwatches etc." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <main className={styles.main}>
+      <main className={styles.main}>
        <Slider />
        <div className={styles.section}>
          <h1 className={styles.section_title}>Top Categories </h1>
@@ -43,8 +44,7 @@ export default function Home() {
        <div className={styles.section}>
          <Footer />
        </div>
-      </main> */} 
-      <SingleProduct />
+      </main> 
     </div>
   )
 }

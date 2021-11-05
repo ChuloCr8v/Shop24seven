@@ -16,6 +16,8 @@
   .menu {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -29,15 +31,18 @@
     }
     .user {
       position: relative;
-      .user_icon {
+      .user_icon,
+      .cart_icon {
         margin-left: 20px;
         &:hover,
         &:active {
           opacity: 0.3;
         }
       }
-      .user_login_signup_link {
+      .user_login_signup_link,
+      .user_login_signup_link_mobile {
         @include flex_col;
+        display: none;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -72,6 +77,9 @@
           background: green;
         }
       }
+      .user_login_signup_link_mobile {
+        display: flex;
+      }
     }
   }
   .search {
@@ -80,7 +88,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 400px;
     &:hover {
       .search_input {
         border-color: red ;
@@ -105,6 +115,62 @@
       background: transparent;
       .search_icon {
         color: gray;
+      }
+    }
+  }
+}
+
+@media (min-width: 688px) {
+  .navbar {
+    flex-direction: row;
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      .user {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .user_icon {
+          display: none;
+        }
+        .cart_icon {
+          top: 0;
+          left: 0;
+          margin-right: 20px;
+        }
+        .user_login_signup_link {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          background: none;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          backdrop-filter: none;
+          box-shadow: none;
+          top: 0;
+          .signup_link,
+          .login_link {
+            color: black;
+            background: none;
+            padding: 0;
+            margin-left: 20px;
+            &:hover {
+              color: red;
+            }
+          }
+          .login_link {
+            background: none;
+          }
+        }
+      }
+      .search {
+        order: 2;
+        margin-top: 0;
       }
     }
   }

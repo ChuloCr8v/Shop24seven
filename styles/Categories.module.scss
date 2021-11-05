@@ -1,13 +1,8 @@
 .categories {
-  display: grid;
-  /*display: flex;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
 }
 
-@media (min-width: 688px) {
-  .categories {
-    grid-template-columns:repeat(2, 1fr);
-  }
-}
+@media (min-width: 688px) {}
